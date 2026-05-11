@@ -5,9 +5,9 @@ const services = [
   { icon: "⚖️", title: "Balanceo de Llantas", desc: "Balanceo de precisión para una conducción suave y prolongar la vida útil de sus llantas." },
   { icon: "🔄", title: "Cambio de Llantas", desc: "Instalación rápida y segura de llantas nuevas o de temporada en cualquier vehículo." },
   { icon: "🔧", title: "Reparación de Pinchazos", desc: "Reparación profesional de pinchazos y fugas de aire para volver al camino rápido." },
-  { icon: "🔩", title: "Alineación de Dirección", desc: "Alineación computarizada para mayor control, seguridad y ahorro de combustible." },
-  { icon: "💨", title: "Inflado con Nitrógeno", desc: "Llenado con nitrógeno puro para una presión más estable y mayor vida útil de la llanta." },
-  { icon: "🚗", title: "Inspección Gratuita", desc: "Revisión completa del estado de sus llantas sin costo, porque su seguridad es primero." },
+  // { icon: "🔩", title: "Alineación de Dirección", desc: "Alineación computarizada para mayor control, seguridad y ahorro de combustible." },
+  // { icon: "💨", title: "Inflado con Nitrógeno", desc: "Llenado con nitrógeno puro para una presión más estable y mayor vida útil de la llanta." },
+  // { icon: "🚗", title: "Inspección Gratuita", desc: "Revisión completa del estado de sus llantas sin costo, porque su seguridad es primero." },
 ];
 
 // Pikachu palette:
@@ -53,7 +53,7 @@ export default function Home() {
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 44, height: 44, borderRadius: "50%", border: `3px solid ${C.black}`, background: C.yellow, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }}>🛞</div>
             <span style={{ fontFamily: "'Bebas Neue', cursive", fontSize: 22, letterSpacing: 2, color: C.black }}>
-              Alejandro&apos;s Tire Repair
+              Pikachu&apos;s Tire Repair
             </span>
           </div>
           <div className="hidden md:flex" style={{ gap: 32, fontSize: 13, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: C.black }}>
@@ -113,8 +113,8 @@ export default function Home() {
         }} />
 
         {/* Pikachu cheek circles */}
-        <div style={{ position: "absolute", bottom: "15%", left: "8%", width: 100, height: 80, borderRadius: "50%", background: C.red, opacity: 0.7 }} />
-        <div style={{ position: "absolute", bottom: "15%", right: "8%", width: 100, height: 80, borderRadius: "50%", background: C.red, opacity: 0.7 }} />
+        {/* <div style={{ position: "absolute", bottom: "15%", left: "8%", width: 100, height: 80, borderRadius: "50%", background: C.red, opacity: 0.7 }} />
+        <div style={{ position: "absolute", bottom: "15%", right: "8%", width: 100, height: 80, borderRadius: "50%", background: C.red, opacity: 0.7 }} /> */}
 
         <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 1.5rem", maxWidth: 900, margin: "0 auto", animation: "slideUp 0.8s ease forwards" }}>
           <div style={{
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
 
           <h1 style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "clamp(5rem,14vw,10rem)", lineHeight: 0.9, margin: "0 0 1rem", color: C.black }}>
-            <span style={{ display: "block" }}>Alejandro&apos;s</span>
+            <span style={{ display: "block" }}>Pikachu&apos;s</span>
             <span style={{ display: "block", color: C.cream, WebkitTextStroke: `3px ${C.black}`, textShadow: `5px 5px 0 ${C.black}` }}>
               Tire Repair
             </span>
@@ -229,19 +229,19 @@ export default function Home() {
               Calidad<br /><span style={{ color: C.cream, WebkitTextStroke: `2px ${C.black}` }}>y Confianza</span>
             </h2>
             <p style={{ color: C.black, lineHeight: 1.8, marginBottom: 16, fontSize: 15, opacity: 0.85 }}>
-              En <strong>Alejandro&apos;s Tire Repair</strong>, tratamos cada vehículo como si fuera el nuestro. Contamos con técnicos experimentados y equipos modernos para garantizar su seguridad.
+              En <strong>Pikachu&apos;s Tire Repair</strong>, tratamos cada vehículo como si fuera el nuestro. Contamos con técnicos experimentados y equipos modernos para garantizar su seguridad.
             </p>
             <p style={{ color: C.black, lineHeight: 1.8, marginBottom: 48, fontSize: 15, opacity: 0.85 }}>
               Precios justos, tiempos de espera mínimos y resultados que hablan por sí solos.
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
+            {/* <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
               {[["10+", "Años de experiencia"], ["5,000+", "Clientes felices"], ["100%", "Garantía"]].map(([num, label]) => (
                 <div key={label} style={{ textAlign: "center", border: `3px solid ${C.black}`, padding: "20px 12px", borderRadius: 4, background: C.cream, boxShadow: `3px 3px 0 ${C.black}` }}>
                   <div style={{ fontFamily: "'Bebas Neue', cursive", fontSize: 36, color: C.red, lineHeight: 1 }}>{num}</div>
                   <div style={{ color: C.black, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.1em", marginTop: 6, fontWeight: 600 }}>{label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div style={{
@@ -254,8 +254,8 @@ export default function Home() {
               boxShadow: `8px 8px 0 ${C.black}`
             }}>
               {/* red cheek circles */}
-              <div style={{ position: "absolute", bottom: "22%", left: "10%", width: 60, height: 48, borderRadius: "50%", background: C.red, opacity: 0.8 }} />
-              <div style={{ position: "absolute", bottom: "22%", right: "10%", width: 60, height: 48, borderRadius: "50%", background: C.red, opacity: 0.8 }} />
+              {/* <div style={{ position: "absolute", bottom: "22%", left: "10%", width: 60, height: 48, borderRadius: "50%", background: C.red, opacity: 0.8 }} />
+              <div style={{ position: "absolute", bottom: "22%", right: "10%", width: 60, height: 48, borderRadius: "50%", background: C.red, opacity: 0.8 }} /> */}
               <div style={{ fontSize: 80, marginBottom: 20, position: "relative", zIndex: 1 }}>🛞</div>
               <p style={{ fontFamily: "'Bebas Neue', cursive", fontSize: 26, color: C.black, margin: 0, letterSpacing: 2, position: "relative", zIndex: 1 }}>Expertos en Llantas</p>
               <p style={{ color: C.brown, fontSize: 13, margin: "8px 0 0", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 700 }}>Bellingham, Washington</p>
@@ -281,8 +281,8 @@ export default function Home() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20, marginBottom: 48 }}>
           {[
             { icon: "📍", label: "Dirección", value: "120 W Smith Road", sub: "Bellingham, WA" },
-            { icon: "📞", label: "Teléfono", value: "(360) 000-0000", sub: "Llámenos hoy" },
-            { icon: "🕐", label: "Horario", value: "Lun – Sáb: 8am – 6pm", sub: "Domingo: Cerrado" },
+            { icon: "📞", label: "Teléfono", value: "(564) 243-6101", sub: "Llámenos hoy" },
+            { icon: "🕐", label: "Horario", value: "Lun – Sáb: 9am – 6pm", sub: "Domingo: Cerrado" },
           ].map((item) => (
             <div key={item.label} style={{
               background: C.yellow, border: `3px solid ${C.black}`, borderRadius: 4, padding: "2.5rem",
@@ -314,7 +314,7 @@ export default function Home() {
           <p style={{ color: "rgba(255,253,231,0.7)", marginBottom: 36, maxWidth: 440, margin: "0 auto 2rem", lineHeight: 1.7, position: "relative", zIndex: 1 }}>
             No espere más. Visítenos en Bellingham o llámenos y con gusto lo atendemos de inmediato.
           </p>
-          <a href="tel:3600000000" style={{
+          <a href="tel:5642436101" style={{
             display: "inline-block", padding: "18px 48px",
             background: C.yellow, color: C.black,
             fontFamily: "'Bebas Neue', cursive", fontSize: 22, letterSpacing: 3,
@@ -333,11 +333,11 @@ export default function Home() {
       <footer style={{ background: C.black, borderTop: `3px solid ${C.yellow}`, padding: "2.5rem 1.5rem", textAlign: "center" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 12 }}>
           <span style={{ fontSize: 22 }}>⚡</span>
-          <span style={{ fontFamily: "'Bebas Neue', cursive", fontSize: 20, letterSpacing: 2, color: C.yellow }}>Alejandro&apos;s Tire Repair</span>
+          <span style={{ fontFamily: "'Bebas Neue', cursive", fontSize: 20, letterSpacing: 2, color: C.yellow }}>Pikachu&apos;s Tire Repair</span>
           <span style={{ fontSize: 22 }}>⚡</span>
         </div>
         <p style={{ color: "rgba(255,215,0,0.5)", fontSize: 13, margin: "0 0 6px" }}>120 W Smith Road, Bellingham, WA</p>
-        <p style={{ color: "rgba(255,215,0,0.25)", fontSize: 12, margin: 0 }}>© {new Date().getFullYear()} Alejandro&apos;s Tire Repair. Todos los derechos reservados.</p>
+        <p style={{ color: "rgba(255,215,0,0.25)", fontSize: 12, margin: 0 }}>© {new Date().getFullYear()} Pikachu&apos;s Tire Repair. Todos los derechos reservados.</p>
       </footer>
 
       <style jsx global>{`

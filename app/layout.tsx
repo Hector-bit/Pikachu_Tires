@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alejandro's Tire Repair | Bellingham, WA",
+  title: "Pikachu's Tire Repair | Bellingham, WA",
   description: "Servicio profesional de llantas en Bellingham, WA. Balanceo, cambio, reparación y alineación. 120 W Smith Road.",
 };
 
