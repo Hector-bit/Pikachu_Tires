@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import EquipmentSection from "./components/EquipmentSection";
 
 const services = [
   { icon: "⚖️", title: "Balanceo de Llantas", desc: "Balanceo de precisión para una conducción suave y prolongar la vida útil de sus llantas." },
@@ -214,6 +215,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* {Equipment Section} */}
+      <EquipmentSection />
+      
       {/* WHY US */}
       <section id="nosotros" style={{ background: C.deepYel, padding: "7rem 1.5rem", position: "relative", overflow: "hidden", borderTop: `3px solid ${C.black}`, borderBottom: `3px solid ${C.black}` }}>
         {/* Back stripe like Pikachu's back stripes */}
