@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <GoogleTagManager gtmId="G-T95CF8G9WQ" />
+      <GoogleTagManager gtmId="G-70YX9734M8" />
       <body>{children}</body>
     </html>
   );
